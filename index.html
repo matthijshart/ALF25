@@ -1,6 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+codex/create-booking-form-and-validation
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+<body>
+    <h1>Book Your Visit</h1>
+    <form id="booking-form">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone*</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Date*</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time*</label>
+        <select id="time" name="time" required>
+            <option value="">Select a time</option>
+            <option value="17:30">17:30</option>
+            <option value="19:30">19:30</option>
+            <option value="21:30">21:30</option>
+        </select>
+
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Book Now</button>
+    </form>
+
+    <div id="form-confirmation"></div>
+
+    <script src="main.js"></script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 codex/add-image-gallery-with-carousel
