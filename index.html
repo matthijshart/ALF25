@@ -18,25 +18,9 @@
   </header>
 
   <main>
-    <!-- Hero with Swiper -->
-    <section id="hero" class="relative h-[80vh]" aria-label="Hero slideshow">
-      <div class="swiper h-full">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="public/images/Bewonerspagina2.jpg" alt="Boot op de gracht" class="w-full h-full object-cover" />
-          </div>
-          <div class="swiper-slide">
-            <img src="public/images/PB22janthumbnail.jpg" alt="Lichtkunst" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-            <img src="public/images/Solstice_ArtistImpression_ALF13.jpg" alt="Installatie langs de kade" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-            <img src="public/images/alf_2024_1800x1020.webp" alt="Boottocht bij nacht" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
+    <!-- Hero -->
+    <section id="hero" class="relative h-[80vh]" aria-label="Hero image">
+      <img src="public/images/Solstice_ArtistImpression_ALF13.jpg" alt="Installatie langs de kade" class="w-full h-full object-cover" />
       <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/40 p-4">
         <h1 class="text-4xl md:text-6xl font-bold">Canal Cruise & Light Festival</h1>
         <p class="mt-4 md:text-lg">Sail through Amsterdam’s shimmering canals during the annual Light Festival.</p>
@@ -202,15 +186,6 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    const heroSwiper = new Swiper('#hero .swiper', {
-      loop: true,
-      effect: 'fade',
-      fadeEffect: { crossFade: true },
-      autoplay: { delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true },
-      keyboard: { enabled: true },
-      pagination: { el: '#hero .swiper-pagination', clickable: true }
-    });
-
     const gallerySwiper = new Swiper('.gallery-swiper', {
       loop: true,
       autoplay: { delay: 3000, disableOnInteraction: false },
