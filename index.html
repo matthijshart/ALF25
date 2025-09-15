@@ -1,115 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl" class="scroll-smooth">
 <head>
-codex/create-booking-form-and-validation
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
-</head>
-<body>
-    <h1>Book Your Visit</h1>
-    <form id="booking-form">
-        <label for="name">Name*</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="phone">Phone*</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="email">Email*</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="date">Date*</label>
-        <input type="date" id="date" name="date" required>
-
-        <label for="time">Time*</label>
-        <select id="time" name="time" required>
-            <option value="">Select a time</option>
-            <option value="17:30">17:30</option>
-            <option value="19:30">19:30</option>
-            <option value="21:30">21:30</option>
-        </select>
-
-        <label for="message">Message (optional)</label>
-        <textarea id="message" name="message"></textarea>
-
-        <button type="submit">Book Now</button>
-    </form>
-
-    <div id="form-confirmation"></div>
-
-    <script src="main.js"></script>
-
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-codex/add-image-gallery-with-carousel
-  <title>Festival Gallery</title>
+  <meta name="description" content="Gezellige boottocht tijdens het Amsterdam Light Festival. Jij regelt de mensen, wij de rest." />
+  <title>ALF25 Canal Cruise</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <style>
-    #gallery {
-      width: 600px;
-      max-width: 100%;
-      margin: 0 auto;
-    }
-    #gallery img {
-      width: 100%;
-      display: block;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div id="gallery" class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="public/images/Bewonerspagina2.jpg" alt="Bewonerspagina2" /></div>
-      <div class="swiper-slide"><img src="public/images/PB22janthumbnail.jpg" alt="PB22janthumbnail" /></div>
-      <div class="swiper-slide"><img src="public/images/Solstice_ArtistImpression_ALF13.jpg" alt="Solstice_ArtistImpression_ALF13" /></div>
-      <div class="swiper-slide"><img src="public/images/alf_2024_1800x1020.webp" alt="alf_2024_1800x1020" /></div>
-      <div class="swiper-slide"><img src="public/images/amsterdam-light-festival-2021-route.jpg" alt="amsterdam-light-festival-2021-route" /></div>
-      <div class="swiper-slide"><img src="public/images/de-sculpturen-boven-de-herengracht-zijn-gemaakt-van-gevlochten.webp" alt="de-sculpturen-boven-de-herengracht-zijn-gemaakt-van-gevlochten" /></div>
-      <div class="swiper-slide"><img src="public/images/alf.jpg.webp" alt="alf" /></div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="main.js"></script>
-
-  <title>Amsterdam Light Festival Boat Tour</title>
-  <link rel="stylesheet" href="assets/styles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-<body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Canal Cruise & Light Festival</h1>
-      <p class="summary">
-        Sail through Amsterdam’s shimmering canals during the annual Light Festival.
-      </p>
-      <ul class="details">
-        <li><strong>Price:</strong> €45 per person</li>
-        <li><strong>Duration:</strong> 90 minutes</li>
-        <li><strong>Dates:</strong> 5 Dec – 18 Jan</li>
-        <li><strong>Contact:</strong> <a href="mailto:bookings@canalstartup.nl">bookings@canalstartup.nl</a></li>
-      </ul>
-      <button class="cta">Book Your Seat</button>
-    </div>
+<body class="bg-white text-black antialiased">
+  <!-- Top Navigation -->
+  <header class="border-b border-black/10">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4" aria-label="Hoofdnavigatie">
+      <span class="font-semibold text-xl">ALF25</span>
+      <a href="https://wa.me/31612345678?text=Ik%20wil%20een%20boottocht%20boeken" class="bg-black text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring" aria-label="Boek via WhatsApp">WhatsApp boeken</a>
+    </nav>
   </header>
-  <div id="gallery" class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="Bewonerspagina2.jpg" alt="Bewonerspagina2"></div>
-      <div class="swiper-slide"><img src="PB22janthumbnail.jpg" alt="PB22janthumbnail"></div>
-      <div class="swiper-slide"><img src="Solstice_ArtistImpression_ALF13.jpg" alt="Solstice Artist Impression"></div>
-      <div class="swiper-slide"><img src="alf_2024_1800x1020.webp" alt="ALF 2024"></div>
-      <div class="swiper-slide"><img src="amsterdam-light-festival-2021-route.jpg" alt="ALF route"></div>
-      <div class="swiper-slide"><img src="de-sculpturen-boven-de-herengracht-zijn-gemaakt-van-gevlochten.webp" alt="Sculpturen Herengracht"></div>
-      <div class="swiper-slide"><img src="alf.jpg.webp" alt="ALF"></div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+
+  <main>
+    <!-- Hero with Swiper -->
+    <section id="hero" class="relative h-[80vh]" aria-label="Hero slideshow">
+      <div class="swiper h-full">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="public/images/Bewonerspagina2.jpg" alt="Boot op de gracht" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/images/PB22janthumbnail.jpg" alt="Lichtkunst" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/images/Solstice_ArtistImpression_ALF13.jpg" alt="Installatie langs de kade" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/images/alf_2024_1800x1020.webp" alt="Boottocht bij nacht" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/40 p-4">
+        <h1 class="text-4xl md:text-6xl font-bold">Canal Cruise & Light Festival</h1>
+        <p class="mt-4 md:text-lg">Sail through Amsterdam’s shimmering canals during the annual Light Festival.</p>
+        <p class="mt-2 md:text-xl font-medium">Jij regelt de mensen, wij de rest.</p>
+        <div class="mt-6 flex space-x-4">
+          <a href="https://wa.me/31612345678?text=Ik%20wil%20een%20boottocht%20boeken" class="bg-black text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring" aria-label="Boek via WhatsApp">WhatsApp boeken</a>
+          <a href="tel:+31612345678" class="bg-slate-200 text-black rounded-2xl px-6 py-3 focus:outline-none focus:ring" aria-label="Bel ons">Bel ons</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-24" aria-labelledby="usp-heading">
+      <h2 id="usp-heading" class="sr-only">Highlights</h2>
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-6 ring-1 ring-black/5 rounded-lg">Tot <strong>55 personen</strong></div>
+        <div class="p-6 ring-1 ring-black/5 rounded-lg">Toilet aan boord</div>
+        <div class="p-6 ring-1 ring-black/5 rounded-lg">Kussens & speakers</div>
+        <div class="p-6 ring-1 ring-black/5 rounded-lg">Grote borreltafel</div>
+      </div>
+    </section>
+
+    <!-- How to book -->
+    <section class="py-24 bg-slate-50" aria-labelledby="steps-heading">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 id="steps-heading" class="text-3xl font-semibold mb-12">Hoe boeken?</h2>
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4"><span class="font-bold">1.</span><span>Datum & tijd kiezen</span></li>
+          <li class="flex items-start gap-4"><span class="font-bold">2.</span><span>App ons met je groepsgrootte</span></li>
+          <li class="flex items-start gap-4"><span class="font-bold">3.</span><span>Bevestiging ontvangen</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-24" aria-labelledby="pricing-heading">
+      <div class="max-w-3xl mx-auto text-center space-y-4">
+        <h2 id="pricing-heading" class="sr-only">Prijzen & data</h2>
+        <p>Vanaf <strong>€45 p.p.</strong> (indicatief)</p>
+        <p>Duur: <strong>90 min</strong></p>
+        <p>Data: <strong>5 dec – 18 jan</strong></p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-24 bg-slate-50" aria-labelledby="gallery-heading">
+      <div class="max-w-6xl mx-auto">
+        <h2 id="gallery-heading" class="text-3xl font-semibold text-center mb-12">Foto's</h2>
+        <div class="swiper gallery-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide aspect-[16/9]"><img src="public/images/Bewonerspagina2.jpg" alt="Bewonerspagina" class="w-full h-full object-cover" loading="lazy" /></div>
+            <div class="swiper-slide aspect-[16/9]"><img src="public/images/PB22janthumbnail.jpg" alt="PB22jan" class="w-full h-full object-cover" loading="lazy" /></div>
+            <div class="swiper-slide aspect-[16/9]"><img src="public/images/Solstice_ArtistImpression_ALF13.jpg" alt="Solstice" class="w-full h-full object-cover" loading="lazy" /></div>
+            <div class="swiper-slide aspect-[16/9]"><img src="public/images/alf_2024_1800x1020.webp" alt="ALF 2024" class="w-full h-full object-cover" loading="lazy" /></div>
+            <div class="swiper-slide aspect-[16/9]"><img src="public/images/amsterdam-light-festival-2021-route.jpg" alt="Route" class="w-full h-full object-cover" loading="lazy" /></div>
+            <div class="swiper-slide aspect-[16/9]"><img src="public/images/de-sculpturen-boven-de-herengracht-zijn-gemaakt-van-gevlochten.webp" alt="Sculpturen" class="w-full h-full object-cover" loading="lazy" /></div>
+            <div class="swiper-slide aspect-[16/9]"><img src="public/images/alf.jpg.webp" alt="ALF" class="w-full h-full object-cover" loading="lazy" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking form -->
+    <section id="boek" class="py-24" aria-labelledby="form-heading">
+      <div class="max-w-xl mx-auto">
+        <h2 id="form-heading" class="text-3xl font-semibold text-center mb-8">Boekingsaanvraag</h2>
+        <form id="booking-form" class="space-y-4" novalidate>
+          <div>
+            <label for="name" class="block mb-1">Naam*</label>
+            <input type="text" id="name" class="w-full border rounded px-3 py-2" required />
+          </div>
+          <div>
+            <label for="contact" class="block mb-1">Telefoon of e-mail*</label>
+            <input type="text" id="contact" class="w-full border rounded px-3 py-2" required />
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="date" class="block mb-1">Datum*</label>
+              <input type="date" id="date" class="w-full border rounded px-3 py-2" required />
+            </div>
+            <div>
+              <label for="time" class="block mb-1">Starttijd*</label>
+              <select id="time" class="w-full border rounded px-3 py-2" required>
+                <option value="">Kies tijd</option>
+                <option value="17:30">17:30</option>
+                <option value="19:30">19:30</option>
+                <option value="21:30">21:30</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="size" class="block mb-1">Aantal personen*</label>
+            <input type="number" id="size" class="w-full border rounded px-3 py-2" min="1" required />
+          </div>
+          <div>
+            <label for="message" class="block mb-1">Bericht</label>
+            <textarea id="message" class="w-full border rounded px-3 py-2" rows="3" ></textarea>
+          </div>
+          <button type="submit" class="bg-black text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring">WhatsApp boeken</button>
+        </form>
+        <p id="form-status" class="mt-4 text-sm text-center" aria-live="polite"></p>
+        <p class="mt-2 text-xs text-center text-slate-500">Geen cookies, geen opslag.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-slate-50" aria-labelledby="faq-heading">
+      <div class="max-w-3xl mx-auto">
+        <h2 id="faq-heading" class="text-3xl font-semibold text-center mb-12">FAQ</h2>
+        <div class="space-y-4">
+          <details class="border-b pb-4">
+            <summary class="font-medium cursor-pointer">Is er eten en drinken aan boord?</summary>
+            <p class="mt-2">Breng je eigen hapjes en drankjes mee; wij zorgen voor glazen.</p>
+          </details>
+          <details class="border-b pb-4">
+            <summary class="font-medium cursor-pointer">Gaat de tocht door bij slecht weer?</summary>
+            <p class="mt-2">Ja, bij extreme omstandigheden plannen we kosteloos om.</p>
+          </details>
+          <details class="border-b pb-4">
+            <summary class="font-medium cursor-pointer">Kunnen we muziek afspelen?</summary>
+            <p class="mt-2">Zeker, er zijn speakers aan boord. Neem je playlist mee.</p>
+          </details>
+          <details class="border-b pb-4">
+            <summary class="font-medium cursor-pointer">Is er een toilet aanwezig?</summary>
+            <p class="mt-2">Ja, er is een compact toilet aan boord.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky contact bar -->
+  <div class="fixed inset-x-0 bottom-0 md:inset-auto md:bottom-auto md:right-4 md:top-4 flex justify-around md:flex-col bg-white/90 md:bg-transparent p-2 md:space-y-2" aria-label="Snelle contact opties">
+    <a href="https://wa.me/31612345678" class="flex-1 text-center bg-sky-500 text-white rounded-2xl mx-1 px-4 py-2 focus:outline-none focus:ring" aria-label="WhatsApp">WhatsApp</a>
+    <a href="tel:+31612345678" class="flex-1 text-center bg-black text-white rounded-2xl mx-1 px-4 py-2 focus:outline-none focus:ring" aria-label="Bel">Bel</a>
+    <a href="mailto:bookings@canalstartup.nl" class="flex-1 text-center bg-slate-200 text-black rounded-2xl mx-1 px-4 py-2 focus:outline-none focus:ring" aria-label="E-mail">E-mail</a>
   </div>
 
+  <!-- Footer -->
+  <footer class="py-8 text-center text-sm">
+    <p>&copy; 2024 ALF25. <a href="https://instagram.com" class="underline" target="_blank" rel="noopener">Instagram</a></p>
+  </footer>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="assets/main.js"></script>
- main
+  <script>
+    const heroSwiper = new Swiper('#hero .swiper', {
+      loop: true,
+      autoplay: { delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true },
+      keyboard: { enabled: true },
+      pagination: { el: '#hero .swiper-pagination', clickable: true },
+      navigation: { nextEl: '#hero .swiper-button-next', prevEl: '#hero .swiper-button-prev' }
+    });
+
+    const gallerySwiper = new Swiper('.gallery-swiper', {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      keyboard: { enabled: true },
+      pagination: { el: '.gallery-swiper .swiper-pagination', clickable: true },
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+      lazy: true,
+      preloadImages: false
+    });
+
+    const form = document.getElementById('booking-form');
+    const statusEl = document.getElementById('form-status');
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const contact = document.getElementById('contact').value.trim();
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      const size = document.getElementById('size').value;
+      const message = document.getElementById('message').value.trim();
+      if (!name || !contact || !date || !time || !size) {
+        statusEl.textContent = 'Vul alle verplichte velden in.';
+        statusEl.classList.add('text-red-600');
+        return;
+      }
+      const text = `Boekingsaanvraag ALF25 – Naam: ${name} | Contact: ${contact} | Datum: ${date} | Tijd: ${time} | #personen: ${size} | Bericht: ${message}`;
+      const encoded = encodeURIComponent(text);
+      const wa = `https://wa.me/31612345678?text=${encoded}`;
+      const mail = `mailto:bookings@canalstartup.nl?subject=Boekingsaanvraag%20ALF25&body=${encoded}`;
+      try {
+        const isMobile = /Android|iPhone|iPad|iPod|Mobi/i.test(navigator.userAgent);
+        if (!isMobile) throw new Error('No WhatsApp');
+        window.location.href = wa;
+        statusEl.textContent = 'WhatsApp wordt geopend...';
+        statusEl.classList.remove('text-red-600');
+      } catch (err) {
+        window.location.href = mail;
+        statusEl.textContent = 'WhatsApp niet gevonden; e-mail geopend.';
+        statusEl.classList.remove('text-red-600');
+      }
+    });
+  </script>
 </body>
 </html>
