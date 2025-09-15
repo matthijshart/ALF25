@@ -1,3 +1,19 @@
+ codex/add-image-gallery-with-carousel
+const gallery = new Swiper('#gallery', {
+  loop: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
 const FORM_ENDPOINT = 'https://formspree.io/f/yourFormId'; // Replace with your endpoint
 
 const form = document.getElementById('booking-form');
@@ -50,4 +66,5 @@ form.addEventListener('submit', async (e) => {
         console.error('Submission failed', error);
         alert('There was a problem submitting your booking. Please try again later.');
     }
+ main
 });
