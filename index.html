@@ -36,8 +36,6 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
       <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/40 p-4">
         <h1 class="text-4xl md:text-6xl font-bold">Canal Cruise & Light Festival</h1>
@@ -188,10 +186,11 @@
   <script>
     const heroSwiper = new Swiper('#hero .swiper', {
       loop: true,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
       autoplay: { delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true },
       keyboard: { enabled: true },
-      pagination: { el: '#hero .swiper-pagination', clickable: true },
-      navigation: { nextEl: '#hero .swiper-button-next', prevEl: '#hero .swiper-button-prev' }
+      pagination: { el: '#hero .swiper-pagination', clickable: true }
     });
 
     const gallerySwiper = new Swiper('.gallery-swiper', {
