@@ -13,7 +13,7 @@
   <header class="border-b border-black/10">
     <nav class="max-w-6xl mx-auto flex items-center justify-between p-4" aria-label="Hoofdnavigatie">
       <span class="font-semibold text-xl">ALF25</span>
-      <a href="https://wa.me/31624978211?text=Ik%20wil%20een%20boottocht%20boeken" class="bg-black text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring" aria-label="Boek via WhatsApp">WhatsApp boeken</a>
+      <a href="#boek" class="bg-black text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring" aria-label="Boekingsaanvraag">Boekingsaanvraag</a>
     </nav>
   </header>
 
@@ -26,7 +26,7 @@
         <p class="mt-4 md:text-lg">Sail through Amsterdam’s shimmering canals during the annual Light Festival.</p>
         <p class="mt-2 md:text-xl font-medium">Jij regelt de mensen, wij de rest.</p>
         <div class="mt-6 flex space-x-4">
-          <a href="https://wa.me/31624978211?text=Ik%20wil%20een%20boottocht%20boeken" class="bg-black text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring" aria-label="Boek via WhatsApp">WhatsApp boeken</a>
+          <a href="#boek" class="bg-black text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring" aria-label="Boekingsaanvraag">Boekingsaanvraag</a>
           <a href="tel:+31624978211" class="bg-slate-200 text-black rounded-2xl px-6 py-3 focus:outline-none focus:ring" aria-label="Bel ons">Bel ons</a>
         </div>
       </div>
@@ -137,7 +137,7 @@
             <label for="message" class="block mb-1">Bericht</label>
             <textarea id="message" class="w-full border rounded px-3 py-2" rows="3" ></textarea>
           </div>
-          <button type="submit" class="bg-black text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring">WhatsApp boeken</button>
+          <button type="submit" class="bg-black text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring">Verstuur boekingsaanvraag</button>
         </form>
         <p id="form-status" class="mt-4 text-sm text-center" aria-live="polite"></p>
         <p class="mt-2 text-xs text-center text-slate-500">Geen cookies, geen opslag.</p>
@@ -220,7 +220,7 @@
         const isMobile = /Android|iPhone|iPad|iPod|Mobi/i.test(navigator.userAgent);
         if (!isMobile) throw new Error('No WhatsApp');
         window.location.href = wa;
-        statusEl.textContent = 'WhatsApp wordt geopend...';
+        statusEl.textContent = 'Boekingsaanvraag wordt naar WhatsApp geopend...';
         statusEl.classList.remove('text-red-600');
       } catch (err) {
         window.location.href = mail;
