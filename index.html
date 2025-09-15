@@ -2,7 +2,7 @@
 <html lang="nl" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="Gezellige boottocht tijdens het Amsterdam Light Festival. Jij regelt de mensen, wij de rest." />
   <title>ALF25 Canal Cruise</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -36,8 +36,6 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
       <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/40 p-4">
         <h1 class="text-4xl md:text-6xl font-bold">Canal Cruise & Light Festival</h1>
@@ -48,16 +46,29 @@
           <a href="tel:+31624978211" class="bg-slate-200 text-black rounded-2xl px-6 py-3 focus:outline-none focus:ring" aria-label="Bel ons">Bel ons</a>
         </div>
       </div>
-    </section>
+      </section>
 
-    <!-- Highlights -->
-    <section class="py-24" aria-labelledby="usp-heading">
-      <h2 id="usp-heading" class="sr-only">Highlights</h2>
-      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div class="p-6 ring-1 ring-black/5 rounded-lg">Tot <strong>55 personen</strong></div>
+      <!-- Introductie en promotie -->
+      <section class="py-16 text-center" aria-labelledby="intro-heading">
+        <h2 id="intro-heading" class="text-3xl font-semibold mb-4">Privé tocht langs het Light Festival</h2>
+        <p class="max-w-2xl mx-auto mb-6">Stap aan boord met je vrienden of collega's en beleef alle lichtkunst vanaf het water. Wij regelen schipper, dekens en drankjes.</p>
+        <p class="text-xl md:text-2xl mb-6"><strong>€550 all-in tot 11 personen</strong></p>
+        <a href="https://wa.me/31612345678?text=Ik%20wil%20een%20boottocht%20boeken" class="inline-block bg-sky-500 text-white rounded-2xl px-6 py-3 focus:outline-none focus:ring">Stuur me een appje</a>
+      </section>
+
+      <!-- Highlights -->
+      <section class="py-24" aria-labelledby="usp-heading">
+        <h2 id="usp-heading" class="sr-only">Highlights</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="p-6 ring-1 ring-black/5 rounded-lg">Tot <strong>55 personen</strong></div>
         <div class="p-6 ring-1 ring-black/5 rounded-lg">Toilet aan boord</div>
         <div class="p-6 ring-1 ring-black/5 rounded-lg">Kussens & speakers</div>
         <div class="p-6 ring-1 ring-black/5 rounded-lg">Grote borreltafel</div>
+        <div class="p-6 ring-1 ring-black/5 rounded-lg">Glühwein</div>
+        <div class="p-6 ring-1 ring-black/5 rounded-lg">Erwtensoep</div>
+        <div class="p-6 ring-1 ring-black/5 rounded-lg">Frisdrank</div>
+        <div class="p-6 ring-1 ring-black/5 rounded-lg">Dekentjes</div>
+        <div class="p-6 ring-1 ring-black/5 rounded-lg">Schipper + hostess</div>
       </div>
     </section>
 
@@ -77,9 +88,9 @@
     <section class="py-24" aria-labelledby="pricing-heading">
       <div class="max-w-3xl mx-auto text-center space-y-4">
         <h2 id="pricing-heading" class="sr-only">Prijzen & data</h2>
-        <p>Vanaf <strong>€45 p.p.</strong> (indicatief)</p>
-        <p>Duur: <strong>90 min</strong></p>
-        <p>Data: <strong>5 dec – 18 jan</strong></p>
+        <p><strong>€550 all-in</strong> (t/m 11 personen)</p>
+        <p>Duur: <strong>1,5 uur</strong></p>
+        <p>Data: <strong>27 nov – 18 jan</strong></p>
       </div>
     </section>
 
@@ -172,9 +183,14 @@
   </main>
 
   <!-- Sticky contact bar -->
+ codex/replace-phone-number-in-index.html
   <div class="fixed inset-x-0 bottom-0 md:inset-auto md:bottom-auto md:right-4 md:top-4 flex justify-around md:flex-col bg-white/90 md:bg-transparent p-2 md:space-y-2" aria-label="Snelle contact opties">
     <a href="https://wa.me/31624978211" class="flex-1 text-center bg-sky-500 text-white rounded-2xl mx-1 px-4 py-2 focus:outline-none focus:ring" aria-label="WhatsApp">WhatsApp</a>
     <a href="tel:+31624978211" class="flex-1 text-center bg-black text-white rounded-2xl mx-1 px-4 py-2 focus:outline-none focus:ring" aria-label="Bel">Bel</a>
+  <div class="fixed inset-x-0 bottom-0 md:inset-auto md:bottom-auto md:right-4 md:top-4 flex justify-around md:flex-col bg-white/90 md:bg-transparent p-2 md:space-y-2" aria-label="Snelle contact opties" style="padding-bottom: calc(env(safe-area-inset-bottom) + 0.5rem); padding-left: calc(env(safe-area-inset-left) + 0.5rem); padding-right: calc(env(safe-area-inset-right) + 0.5rem);">
+    <a href="https://wa.me/31612345678" class="flex-1 text-center bg-sky-500 text-white rounded-2xl mx-1 px-4 py-2 focus:outline-none focus:ring" aria-label="WhatsApp">WhatsApp</a>
+    <a href="tel:+31612345678" class="flex-1 text-center bg-black text-white rounded-2xl mx-1 px-4 py-2 focus:outline-none focus:ring" aria-label="Bel">Bel</a>
+ main
     <a href="mailto:bookings@canalstartup.nl" class="flex-1 text-center bg-slate-200 text-black rounded-2xl mx-1 px-4 py-2 focus:outline-none focus:ring" aria-label="E-mail">E-mail</a>
   </div>
 
@@ -188,10 +204,11 @@
   <script>
     const heroSwiper = new Swiper('#hero .swiper', {
       loop: true,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
       autoplay: { delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true },
       keyboard: { enabled: true },
-      pagination: { el: '#hero .swiper-pagination', clickable: true },
-      navigation: { nextEl: '#hero .swiper-button-next', prevEl: '#hero .swiper-button-prev' }
+      pagination: { el: '#hero .swiper-pagination', clickable: true }
     });
 
     const gallerySwiper = new Swiper('.gallery-swiper', {
